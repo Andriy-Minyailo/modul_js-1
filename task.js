@@ -67,27 +67,56 @@
 // console.log(checkStorage(100, 50));// "The order is accepted, our manager will contact you"
 // console.log(checkStorage(100, 130));// "Not enough goods in stock!"
 
-task_27
-function getSubscriptionPrice(type) {
-  let price;
+// task_27
+// function getSubscriptionPrice(type) {
+//   let price;
+//   // Change code below this line
+
+//  switch (type) { // Change this line
+//     case "starter":  // Change this line
+//       price = 0; // Change this line
+//       break;
+
+//     case "professional": // Change this line
+//       price = 20; // Change this line
+//       break;
+
+//     case "organization": // Change this line
+//       price = 50; // Change this line
+//       break;
+//   }
+
+//   // Change code above this line
+//   return price;
+// }
+
+// task_29
+function getShippingCost(country) {
+  let message;
   // Change code below this line
+switch (country) {
+  case "China":
+    message = "Shipping to China will cost 100 credits";
+    break;
 
- switch (type) { // Change this line
-    case "starter":  // Change this line
-      price = 0; // Change this line
-      break;
+  case "Chile":
+    message = "Shipping to Chile will cost 250 credits";
+    break;
+  
+  case "Australia":
+    message = "Shipping to Australia will cost 170 credits";
+    break;
 
-    case "professional": // Change this line
-      price = 20; // Change this line
-      break;
+    case "Jamaica":
+    message = "Shipping to Jamaica will cost 120 credits";
+    break;
 
-    case "organization": // Change this line
-      price = 50; // Change this line
-      break;
-  }
-
+  default:
+    message = "Sorry, there is no delivery to your country";
+    
+}
   // Change code above this line
-  return price;
+  return message;
 }
 
 
