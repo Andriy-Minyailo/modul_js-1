@@ -120,15 +120,26 @@
 // }
 
 // task_33
-function formatMessage(message, maxLength) {
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
+//   if (message.length > maxLength) {
+//     result = `${message.slice(0, maxLength)}...`;
+//   } else result = message;
+//   /// Change code above this line
+//   return result;
+// }
+
+// task_36
+function checkForSpam(message) {
   let result;
   // Change code below this line
-  if (message.length > maxLength) {
-    result = `${message.slice(0, maxLength)}...`;
-  } else result = message;
-  /// Change code above this line
+  result = message.toLowerCase().includes("spam") || message.toLowerCase().includes("sale");
+  // Change code above this line
   return result;
 }
+
+
 
 
 
